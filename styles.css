@@ -1,4 +1,5 @@
-/* CSS reset */
+/*  +++++++++++++++ CSS reset ++++++++++++++++++++++ */
+
 *,
 *::before,
 *::after {
@@ -7,12 +8,7 @@
   box-sizing: border-box;
 }
 
-/* variables */
-:root {
-  --Colors-Link: black;
-}
-
-/* helper classes */
+/* ++++++++++++ helper classes ++++++++++++++++++++++ */
 
 .flexbox {
   display: flex;
@@ -27,16 +23,17 @@
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-/* global */
+/* ++++++++++++++++++ global +++++++++++++++++++++++ */
+
 a:hover,
 a:link,
 a:active,
 a:visited {
   text-decoration: none;
-  color: var(--Colors-Link, black);
+  color: black;
 }
 
 body {
@@ -62,13 +59,12 @@ body {
 .link-offset {
   width: 1px;
   height: 1px;
-  /* background-color: red; */
   align-self: flex-start;
   position: relative;
   top: -80px;
 }
 
-/* Header */
+/* ++++++++++++++++ Header +++++++++++++++++++++++++++ */
 
 #header {
   justify-content: space-between;
@@ -80,7 +76,6 @@ body {
 
 #nav-bar {
   width: 40vw;
-  /* background-color: pink; */
   justify-content: space-around;
 }
 
@@ -88,11 +83,9 @@ nav a {
   font-size: 1rem;
 }
 
-
 #header img {
   width: 300px;
   height: auto;
-  /* background-color: blue; */
 }
 
 @media (max-width: 700px) {
@@ -102,123 +95,117 @@ nav a {
 
   nav div:not(:last-of-type) a {
     margin-bottom: 0.2rem;
-}
+  }
 }
 
 @media (max-width: 600px) {
-    #header {
-        flex-direction: column;
-      }
+  #header {
+    flex-direction: column;
+  }
 
-    #header img {
-        margin-bottom: 0.6rem;
-    }
+  #header img {
+    margin-bottom: 0.6rem;
+  }
 }
 
-/* Section get-started */
+/* ++++++++++++++++++++++++ Section get-started ++++++++++++++++++ */
 
 #get-started-section h2 {
-    margin-top: 7.125rem;
+  margin-top: 7.125rem;
 }
 
 #email {
-    margin-top: 1rem;
-    width: 275px;
-    height: 29px;
-    padding: 0.5rem;
+  margin-top: 1rem;
+  width: 275px;
+  height: 29px;
+  padding: 0.5rem;
 }
 
 #submit {
-    margin-top: 1rem;
-    width: 150px;
-    height: 30px;
+  margin-top: 1rem;
+  width: 150px;
+  height: 30px;
 }
 
 @media (max-width: 600px) {
   #get-started-section h2 {
     margin-top: 10rem;
-}
+  }
 }
 
-/* Section products */
+/* ++++++++++++++++++ Section products +++++++++++++++++++++++++ */
+
 #products-section {
-    /* background-color: green; */
-    flex-direction: column;
-    margin: 4rem auto 0;
-    max-width: 1000px;
-    width: 100%;
+  flex-direction: column;
+  margin: 4rem auto 0;
+  max-width: 1000px;
+  width: 100%;
 }
-
 
 .product-container {
-    /* background-color: orange; */
-    width: 100%;
-    /* height: 200px; */
+  width: 100%;
 }
 
 .icon-container {
-    /* background-color: red; */
-    max-width: 200px;
-    width: 20vw;
-    height: 125px;
-    /* flex: 1; */
+  max-width: 200px;
+  width: 20vw;
+  height: 125px;
 }
 
 .description {
-    width: 80vw;
+  width: 80vw;
 }
 
 .description p {
-    margin-top: 0.3rem;
+  margin-top: 0.3rem;
 }
 
 @media (max-width: 500px) {
-    .icon-container {
-        display: none;
-    }
+  .icon-container {
+    display: none;
+  }
 
-    .description {
-        width: 100%;
-        margin-bottom: 6rem;
-    }
+  .description {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
 
-    .description h2,
-    .description p {
-        text-align: center;
-    }
+  .description h2,
+  .description p {
+    text-align: center;
+  }
 }
 
-/* Video section */
+/* +++++++++++++++++++ Video section +++++++++++++++++++++ */
+
 #video-section {
-    width: 100%;
-    max-width: 1000px;
-    margin: 3rem auto 0;
-    /* background-color: orange; */
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto 0;
 }
 
 #video {
-    height: auto;
-    width: 70%;
-    z-index: -100;
+  height: auto;
+  width: 70%;
+  z-index: -100;
 }
 
 @media (max-width: 550px) {
-    #video {
-        height: auto;
-        width: 90%;
-    }
+  #video {
+    height: auto;
+    width: 90%;
+  }
 }
 
-/* pricing section */
+/* ++++++++++++++++++ pricing section +++++++++++++++++++++ */
+
 #pricing-section {
   width: 100%;
   max-width: 1000px;
   margin: 3rem auto 0;
-  /* background-color: orange; */
 }
 
 .pricing-container {
-  /* background-color: orange; */
   border: 1px solid black;
   flex-direction: column;
   margin: 0.7rem;
@@ -262,7 +249,6 @@ nav a {
     width: 100%;
     max-width: 1000px;
     margin: 3rem auto 0;
-    /* background-color: orange; */
     flex-direction: column;
   }
 
@@ -271,7 +257,8 @@ nav a {
   }
 }
 
-/* footer */
+/* +++++++++++++++++++ footer +++++++++++++++++++++++ */
+
 footer {
   width: 100%;
   max-width: 1000px;
@@ -286,7 +273,6 @@ footer {
 #footer-nav {
   width: 14rem;
   height: 20px;
-  /* background-color: pink; */
   justify-content: space-around;
 }
 
