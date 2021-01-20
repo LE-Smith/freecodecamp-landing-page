@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
     <title>Landing Page</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+
+    <!-- ++++++++++++++++++++ HEADER +++++++++++++++++++++++++++ -->
+
+    <header id="header" class="flexbox ai-center">
+      <img
+        src="/original_trombones.png"
+        alt="logo Original Trombones"
+        id="header-img"
+      />
+      <nav class="flexbox" id="nav-bar">
+        <div class="flexbox jc-center ai-center">
+          <a href="#products-point" class="nav-link">Features</a>
+        </div>
+        <div class="flexbox jc-center ai-center">
+          <a href="#video-point" class="nav-link">How it works</a>
+        </div>
+        <div class="flexbox jc-center ai-center">
+          <a href="#pricing-point" class="nav-link">Pricing</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+    <!-- ++++++++++++++++++++ GET STARTED +++++++++++++++++++++++++++ -->
+
+      <section class="flexbox ai-center flex-column" id="get-started-section">
+        <h2>Handcrafted, home-made masterpieces</h2>
+
+        <form
+          class="flexbox jc-center ai-center flex-column"
+          action="https://www.freecodecamp.com/email-submit"
+          id="form"
+        >
+          <input type="email" id="email" name="email" placeholder="your email address" />
+
+          <input class="button" type="submit" id="submit" value="GET STARTED" />
+        </form>
+      </section>
+
+    <!-- ++++++++++++++++++++ PRODUCTS +++++++++++++++++++++++++++ -->
+
+    <section class="flexbox ai-center" id="products-section">
+      <div class="link-offset" id="products-point"></div>
+      <div class="product-container flexbox ai-center jc-center">
+        <div class="icon-container flexbox jc-center ai-center">
+          <img src="./fire.png" alt="fire icon" class="icon" />
+        </div>
+        <div class="description">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="product-container flexbox ai-center jc-center">
+          <div class="icon-container flexbox jc-center ai-center">
+            <img src="./truck.png" alt="truck icon" class="icon" />
+          </div>
+          <div class="description">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="product-container flexbox ai-center jc-center">
+          <div class="icon-container flexbox jc-center ai-center">
+            <img src="./battery.png" alt="battery icon" class="icon" />
+          </div>
+          <div class="description">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <!-- ++++++++++++++++++++ VIDEO +++++++++++++++++++++++++++ -->
+
+    <section class="flexbox jc-center ai-center" id="video-section">
+        <div class="link-offset" id="video-point"></div>
+          <video src="./Testexport.mov" controls id="video">
+          </video>
+      </section>
+
+    <!-- ++++++++++++++++++++ PRICING +++++++++++++++++++++++++++ -->
+
+    <section class="flexbox jc-center ai-center" id="pricing-section">
+        <div class="link-offset" id="pricing-point"></div>
+        <article class="pricing-container flexbox ai-center">
+          <header class="flexbox jc-center ai-center">
+            <h2>Tenor Trombone</h2>
+          </header>
+          <h3>$600</h3>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="button btn-pricing" i >SELECT</button>
+        </article>
+        <article class="pricing-container flexbox ai-center">
+          <header class="flexbox jc-center ai-center">
+            <h2>Bass Trombone</h2>
+          </header>
+          <h3>$900</h3>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="button btn-pricing" i >SELECT</button>
+        </article>
+        <article class="pricing-container flexbox ai-center">
+          <header class="flexbox jc-center ai-center">
+            <h2>Valve Trombone</h2>
+          </header>
+          <h3>$1200</h3>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="button btn-pricing" i >SELECT</button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="flexbox jc-center">
+      <nav class="flexbox" id="footer-nav">
+        <div class="flexbox jc-center ai-center">
+          <a href="#" >Privacy</a>
+        </div>
+        <div class="flexbox jc-center ai-center">
+          <a href="#" >Terms</a>
+        </div>
+        <div class="flexbox jc-center ai-center">
+          <a href="#" >Contact</a>
+        </div>
+      </nav>
+      <p>Copyright2016, Original Trombones</p>
+    </footer>
+
+  </body>
 </html>
